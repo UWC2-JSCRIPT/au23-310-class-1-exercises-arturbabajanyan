@@ -18,7 +18,7 @@ const costPerInchLarge = (19.99 / largePizzaArea).toFixed(2);
 // 3. Using the Math object, put together a code snippet
 // that allows you to draw a random card with a value
 // between 1 and 13 (assume ace is 1, jack is 11…)
-
+Math.floor(Math.random() * 13) + 1;
 
 // 4. Draw 3 cards and use Math to determine the highest
 // card
