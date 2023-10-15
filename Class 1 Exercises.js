@@ -12,7 +12,8 @@ const smallPizzaArea = Math.round(Math.PI * (smallPizza/2) ** 2);
 const largePizzaArea = Math.round(Math.PI * (largePizza/2) ** 2);
 
 // 2. What is the cost per square inch of each pizza?
-
+const costPerInchSmall = (16.99 / smallPizzaArea).toFixed(2);
+const costPerInchLarge = (19.99 / largePizzaArea).toFixed(2);
 
 // 3. Using the Math object, put together a code snippet
 // that allows you to draw a random card with a value
