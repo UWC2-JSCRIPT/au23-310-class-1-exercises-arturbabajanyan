@@ -28,6 +28,7 @@ let card3 = Math.floor(Math.random() * 13) + 1;
 let highestCard;
 //console.log(card1, card2, card3)
 highestCard = Math.max(card1, card2, card3);
+
 /**
  * ADDRESS LINE
  */
@@ -36,7 +37,13 @@ highestCard = Math.max(card1, card2, card3);
 // streetAddress, city, state, and zipCode. Use
 // this information to create a formatted address block
 // that could be printed onto an envelope.
-
+let firstName = "Matt";
+let lastName = "Schneider";
+let address = "1234 5th Ave";
+let city = "Seattle";
+let state = "Washington";
+let zipCode = "12345";
+fullAddress = firstName + " " + lastName + "\n" + address + "\n" + city + ", " + state + " " + zipCode;
 
 // 2. You are given a string in this format:
 // firstName lastName(assume no spaces in either)
@@ -45,6 +52,9 @@ highestCard = Math.max(card1, card2, card3);
 // 
 // Write code that is able to extract the first name from this string into a variable.
 // Hint: use indexOf, slice, and / or substring
+let firstNameLength = firstName.length;
+let firstNameIndex = fullAddress.indexOf(firstName);
+let firstNameOutOfAddress = fullAddress.substring(firstNameIndex, (firstNameIndex + firstNameLength));
 
 
 /**
