@@ -22,8 +22,12 @@ Math.floor(Math.random() * 13) + 1;
 
 // 4. Draw 3 cards and use Math to determine the highest
 // card
-
-
+let card1 = Math.floor(Math.random() * 13) + 1;
+let card2 = Math.floor(Math.random() * 13) + 1;
+let card3 = Math.floor(Math.random() * 13) + 1;
+let highestCard;
+//console.log(card1, card2, card3)
+highestCard = Math.max(card1, card2, card3);
 /**
  * ADDRESS LINE
  */
